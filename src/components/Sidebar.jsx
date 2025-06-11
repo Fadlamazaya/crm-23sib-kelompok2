@@ -1,3 +1,4 @@
+import { TbHealthRecognition } from "react-icons/tb"; 
 import { BiBookAdd } from "react-icons/bi";
 import { FaHistory } from "react-icons/fa"; 
 import { CgNotifications } from "react-icons/cg"; 
@@ -28,17 +29,19 @@ const menuItems = [
   { name: "Pendaftaran online", icon: <BiBookAdd />, path: "/pendaftaran" },
   // { name: "Riwayat", icon: <BiBookAdd />, path: "/riwayat" },
   { name: "Riwayat", icon: <BiBookAdd />, path: "/riwayatpages" },
-  { name: "Produk", icon: <Box />, path: "/produk" },
-  { name: "Laporan", icon: <BarChart2 />, path: "/laporan" },
+  // { name: "Produk", icon: <Box />, path: "/produk" },
+  // { name: "Laporan", icon: <BarChart2 />, path: "/laporan" },
   { name: "Penjualan", icon: <BiBasket /> , path: "/Penjualan" },
   { name: "Feedback", icon: <MdFeedback /> , path: "/Feedback" },
   { name: "Reminder", icon: <CgNotifications /> , path: "/Reminder" },
-  { name: "Riwayat", icon: <FaHistory /> , path: "/RiwayatPages" },
+  // { name: "Riwayat", icon: <FaHistory /> , path: "/RiwayatPages" },
   { name: "Pelanggan", icon: <Users />, path: "/pelanggan" },
   { name: "Penjualan", icon: <ShoppingCart />, path: "/penjualan" },
   { name: "Rekomendasi", icon: <HeartHandshake />, path: "/rekomendasi" },
   { name: "Laporan & Analisis", icon: <FileBarChart2 />, path: "/laporan" },
   { name: "FAQ", icon: <HelpCircle />, path: "/faq" },
+  { name: "Konten", icon: <BiBookAdd />, path: "/konten-edukasi" },
+  { name: "Promosi", icon: <TbHealthRecognition /> , path: "/filter-hewan" },
 
   // Menu Tambah Data baru
   { name: "Tambah Data", icon: <UserPlus />, path: "/tambah-data" },
