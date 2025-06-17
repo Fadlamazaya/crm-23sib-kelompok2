@@ -14,6 +14,9 @@ export default function Riwayat({ data }) {
             <thead className="bg-gray-50">
               <tr>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  No. Antrian
+                </th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Nama
                 </th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -33,6 +36,9 @@ export default function Riwayat({ data }) {
             <tbody className="divide-y divide-gray-200">
               {data.map((item, i) => (
                 <tr key={i} className="hover:bg-gray-50">
+                  <td className="px-6 py-4 whitespace-nowrap font-bold text-blue-700">
+                    {item.nomorAntrian}
+                  </td>
                   <td className="px-6 py-4 whitespace-nowrap">{item.nama}</td>
                   <td className="px-6 py-4 whitespace-nowrap">{item.dokter}</td>
                   <td className="px-6 py-4 whitespace-nowrap">{item.jenisHewan}</td>
