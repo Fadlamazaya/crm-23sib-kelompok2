@@ -1,20 +1,20 @@
+import React, { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 
+import MainLayout from "./components/MainLayout";
+import Dashboard from "./pages/Dashboard";
 import Penjualan from "./pages/Penjualan";
 import Riwayat from "./pages/Riwayat";
 import Pendaftaran from "./pages/Pendaftaran";
 import RiwayatPages from "./pages/RiwayatPages";
 import Reminder from "./pages/Reminder";
-
-import React, { useState } from "react";
-import { Routes, Route } from "react-router-dom";
-import MainLayout from "./components/MainLayout";
-
-import Dashboard from "./pages/Dashboard";
 import CustomerManagement from "./pages/CustomerManagement";
 import RekomendasiLayanan from "./pages/RekomendasiLayanan";
 import LaporanAnalisis from "./pages/LaporanAnalisis";
 import FaqLayanan from "./pages/FaqLayanan";
 import FormTambahData from "./pages/FormTambahData";
+import Member from "./pages/Member";
+// import KunjunganHewan from "./pages/KunjunganHewan";
 
 function App() {
   const [faqs, setFaqs] = useState([
@@ -59,14 +59,18 @@ function App() {
 
   return (
     <Routes>
+      {/* Route tanpa sidebar/header */}
+      <Route path="/member" element={<Member />} />
+
+      {/* Route dengan MainLayout */}
       <Route element={<MainLayout />}>
         <Route path="/" element={<Dashboard />} />
-        <Route path="/Penjualan" element={<Penjualan />} />
-        <Route path="/pelanggan" element={<CustomerManagement />} />
+        <Route path="/penjualan" element={<Penjualan />} />
         <Route path="/pendaftaran" element={<Pendaftaran />} />
+        {/* <Route path="/kunjungan" element={<KunjunganHewan />} /> */}
         <Route path="/riwayat" element={<Riwayat />} />
+        <Route path="/riwayatPages" element={<RiwayatPages />} />
         <Route path="/reminder" element={<Reminder />} />
-         <Route path="/riwayatPages" element={<RiwayatPages/>} />
         <Route path="/pelanggan" element={<CustomerManagement />} />
         <Route
           path="/rekomendasi"

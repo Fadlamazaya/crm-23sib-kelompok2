@@ -1,9 +1,12 @@
 import { Search, User } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
     <header className="flex justify-between items-center px-6 py-4 bg-white shadow-sm border-b sticky top-0 z-10">
-      <div className="text-sm text-gray-500">Pages / <span className="text-gray-900 font-semibold">Dashboard</span></div>
+      <div className="text-sm text-gray-500">
+        Pages / <span className="text-gray-900 font-semibold">Dashboard</span>
+      </div>
       <div className="flex items-center gap-4">
         <div className="relative">
           <input
@@ -13,6 +16,12 @@ const Header = () => {
           />
           <Search className="absolute left-3 top-2.5 w-4 h-4 text-gray-400" />
         </div>
+        <Link
+          to="/member"
+          className="px-3 py-1.5 text-sm bg-purple-600 text-white rounded-full hover:bg-purple-700 transition"
+        >
+          Member
+        </Link>
         <div className="flex items-center gap-2 text-sm cursor-pointer text-gray-700 hover:text-purple-700">
           <User className="w-4 h-4" />
           Sign In
@@ -23,5 +32,3 @@ const Header = () => {
 }
 
 export default Header
-
-

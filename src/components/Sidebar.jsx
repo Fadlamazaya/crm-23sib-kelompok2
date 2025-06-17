@@ -29,19 +29,20 @@ const menuItems = [
   // { name: "Riwayat", icon: <BiBookAdd />, path: "/riwayat" },
   { name: "Riwayat", icon: <BiBookAdd />, path: "/riwayatpages" },
   { name: "Produk", icon: <Box />, path: "/produk" },
-  { name: "Laporan", icon: <BarChart2 />, path: "/laporan" },
+  // { name: "Laporan", icon: <BarChart2 />, path: "/laporan" },
   { name: "Penjualan", icon: <BiBasket /> , path: "/Penjualan" },
   { name: "Feedback", icon: <MdFeedback /> , path: "/Feedback" },
   { name: "Reminder", icon: <CgNotifications /> , path: "/Reminder" },
-  { name: "Riwayat", icon: <FaHistory /> , path: "/RiwayatPages" },
+  // { name: "Riwayat", icon: <FaHistory /> , path: "/RiwayatPages" },
   { name: "Pelanggan", icon: <Users />, path: "/pelanggan" },
   { name: "Penjualan", icon: <ShoppingCart />, path: "/penjualan" },
   { name: "Rekomendasi", icon: <HeartHandshake />, path: "/rekomendasi" },
   { name: "Laporan & Analisis", icon: <FileBarChart2 />, path: "/laporan" },
+  // { name: "Kunjungan Hewan", icon: <FaHistory />, path: "/kunjungan" },
   { name: "FAQ", icon: <HelpCircle />, path: "/faq" },
 
   // Menu Tambah Data baru
-  { name: "Tambah Data", icon: <UserPlus />, path: "/tambah-data" },
+  // { name: "Tambah Data", icon: <UserPlus />, path: "/tambah-data" },
 ];
 
 const accountItems = [
